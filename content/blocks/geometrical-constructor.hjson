@@ -1,0 +1,42 @@
+type: UnitFactory
+name: geometrical-constructor
+localizedName: "Geometric constructor"
+description: "makes funny cube man real"
+category: units
+
+health: 777
+size: 2
+itemCapacity: 1000
+buildTime: 200
+solid: false
+
+requirements: [
+    copper/7
+    lead/7
+    silicon/7
+]
+
+plans: [
+    {
+        unit: geometry-cube
+        requirements: [
+            blast-compound/600
+            silicon/6
+            spore-pod/777
+        ]
+        time: 200
+    }
+]
+
+consumes: {
+    power: 7
+}
+
+research: {
+    parent: ground-factory
+    requirements: [
+        lead/700
+        graphite/6
+        silicon/0.6
+    ]
+}
